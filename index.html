@@ -1,182 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BKP's 35th Birthday Cruise!</title>
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: linear-gradient(to bottom, #fff8dc, #ffeaa7);
-      color: #333;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-    }
 
-    header {
-      background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 5rem 2rem;
-      box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.3);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    header h1 {
-      font-size: 3rem;
-      margin: 0;
-      letter-spacing: 1px;
-    }
+<title>Catalina & Ensenada Getaway | July 26-30, 2027</title>
 
-    header h2 {
-      font-weight: 400;
-      margin-top: 0.5rem;
-      font-size: 1.3rem;
-    }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    section {
-      padding: 2.5rem 1.5rem;
-      max-width: 900px;
-      margin: auto;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    h3 {
-      color: #e96b56;
-      border-bottom: 2px solid #f1c40f;
-      display: inline-block;
-      margin-bottom: 1rem;
-    }
+<link
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+rel="stylesheet">
 
-    h4 {
-      color: #e96b56;
-      margin-top: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
+<link rel="stylesheet" href="style.css">
 
-    p, ul {
-      font-size: 1rem;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0.5rem 0 1rem 0;
-    }
-
-    ul li::before {
-      content: "🌴 ";
-    }
-
-    .highlight {
-      background: #fff3c4;
-      border-left: 5px solid #e96b56;
-      padding: 1rem 1.5rem;
-      border-radius: 10px;
-      margin-bottom: 2rem;
-    }
-
-    .countdown {
-      font-weight: bold;
-      color: #e96b56;
-      font-size: 1.3rem;
-    }
-
-    a {
-      color: #e96b56;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #fef4c0;
-      color: #555;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      section {
-        padding: 1.5rem;
-      }
-    }
-  </style>
 </head>
+
 <body>
-  <header>
-    <h1>BKP's 35th Birthday Cruise!</h1>
-    <h2>🌴 January 7–11, 2026 | Miami → Key West → Bahamas 🌴</h2>
-  </header>
 
-  <section>
-    <div class="highlight">
-      <h3>⏰ Countdown to Sail Away</h3>
-      <p>Can you believe we’re just <span id="days-away" class="countdown">--</span> days away?! Time is flying — which means it’s officially time to book flights, transportation, and lodging for our pre-cruise stay.</p>
-      <p><strong>TL;DR 🚢</strong> <span id="days-away-short" class="countdown">--</span> Days ‘Til We Sail!</p>
-    </div>
+<!-- NAVIGATION -->
 
-    <h3>🛫 Pre-Cruise Plans</h3>
-    <p><strong>✈️ Flight:</strong> Booked! Mon, Jan 5 — LAX → FLL (<em>Delta #DL477, 11:30 PM–7:20 AM</em>)</p>
-    <p><strong>🚗 Ride:</strong> Group shuttle from Fort Lauderdale → Miami on Tues, Jan 6. Let me know if you want in!</p>
-    <p><strong>🏡 Stay:</strong> Group Airbnb/hotel for Tues, Jan 6 before we board the ship!</p>
-    <p><strong>👉 RSVP by Nov 7th</strong> if you want in for transport from FLL → Miami and/or stay at the group Airbnb.</p>
+<nav class="navbar navbar-expand-lg fixed-top">
 
-    <h4>✈️ Return (Not Booked Yet):</h4>
-    <ul>
-      <li>JetBlue FLL → LAX (5:29–8:29 PM)</li>
-      <li>Delta MIA → LAX (7:05–10:11 PM)</li>
-    </ul>
+<div class="container">
 
-    <h4>👚 Coming Soon:</h4>
-    <p>Details for cruise shirts + other gear!</p>
+<a class="navbar-brand" href="#">
+🌴 Catalina Getaway
+</a>
 
-    <h4>💡 Cruise Tips:</h4>
-    <p><a href="https://vvinsider.com/" target="_blank">VV Insider</a></p>
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#nav">
 
-    <h3>🚢 Cruise Overview</h3>
-    <p>Join us on an unforgettable tropical escape as we set sail from Miami to Key West and the Bahamas aboard Virgin Voyages! Expect sunshine, cocktails, beach vibes, and birthday memories that’ll last a lifetime. 🍹☀️</p>
+<span class="navbar-toggler-icon"></span>
 
-    <h3>🛏 Room Options</h3>
-    <ul>
-      <li>Insider Cabin – starting at $1442 for 2 people</li>
-      <li>Sea View Cabin – starting at $1434 for 2 people</li>
-      <li>Sea Terrace (Balcony) – starting at $1672 for 2 people</li>
-    </ul>
-    <p>*Only one credit card can be used for the initial deposit. All future payments can be split among travelers.*</p>
+</button>
 
-    <h3>💼 Travel Agent Booking Info</h3>
-    <p>Hi! I'm <strong>Callie Larson</strong>, your dedicated travel agent with <strong>Fora Travel</strong>. I’m here to help you book your cruise — completely free of charge! 🙌</p>
-    <p><strong>Phone:</strong> <a href="tel:5415158454">541-515-8454</a><br>
-    <strong>Email:</strong> <a href="mailto:callie.larson@fora.travel">callie.larson@fora.travel</a></p>
-    <p>If you're interested in booking, please reach out and I’ll take care of everything!</p>
-    <p><a href="https://www.virginvoyages.com/book/voyage-planner/pre-checkout?agencyId=15975&agentId=195977&bookingChannel=FMLINK&currencyCode=USD&dateFrom=2026-01-01&dateTo=2026-01-31&durations=1&packageCode=4NKW2&selectedRegions=CARIBBEAN&voyageId=SC2601074NKW2" target="_blank">✨ Click here to book your cabin directly ✨</a></p>
-  </section>
+<div class="collapse navbar-collapse"
+id="nav">
 
-  <footer>
-    <p>🌞 Let’s make memories in paradise. Can’t wait to cruise with you! 🌊</p>
-  </footer>
+<ul class="navbar-nav ms-auto">
 
-  <script>
-    // Countdown to January 7, 2026
-    const sailDate = new Date("January 7, 2026").getTime();
-    function updateCountdown() {
-      const now = new Date().getTime();
-      const diff = sailDate - now;
-      const days = Math.max(0, Math.ceil(diff / (1000 * 60 * 60 * 24)));
-      document.getElementById("days-away").textContent = days;
-      document.getElementById("days-away-short").textContent = days;
-    }
-    updateCountdown();
-    setInterval(updateCountdown, 86400000); // update daily
-  </script>
+<li class="nav-item">
+<a class="nav-link" href="#itinerary">Itinerary</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#included">Included</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#drinkpackage">Drink Package</a>
+</li>
+
+<li class="nav-item">
+<a class="nav-link" href="#traveladvisor">Book With Callie</a>
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="hero-overlay">
+
+<div class="container text-center">
+
+<h1>
+
+Catalina & Ensenada Getaway
+
+</h1>
+
+<h2>
+
+July 26 – July 30, 2027
+
+</h2>
+
+<p>
+
+🚢 Ovation of the Seas
+
+</p>
+
+<a href="#traveladvisor" class="btn btn-warning btn-lg">
+
+Book Your Cabin
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- COUNTDOWN -->
+
+<section class="countdown-section">
+
+<div class="container">
+
+<h2>
+
+Countdown to Sail Away
+
+</h2>
+
+<div class="countdown">
+
+<div>
+
+<span id="days">000</span>
+
+<p>Days</p>
+
+</div>
+
+<div>
+
+<span id="hours">00</span>
+
+<p>Hours</p>
+
+</div>
+
+<div>
+
+<span id="minutes">00</span>
+
+<p>Minutes</p>
+
+</div>
+
+<div>
+
+<span id="seconds">00</span>
+
+<p>Seconds</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CRUISE OVERVIEW -->
+
+<section class="container py-5">
+
+<div class="row g-4">
+
+<div class="col-md-3">
+
+<div class="info-card">
+
+<h3>🚢 Ship</h3>
+
+<p>Ovation of the Seas</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="info-card">
+
+<h3>📍 Stops</h3>
+
+<p>
+
+Catalina Island
+
+<br>
+
+Ensenada
+
+</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="info-card">
+
+<h3>🌙 Nights</h3>
+
+<p>4 Nights</p>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="info-card">
+
+<h3>⚓ Departure</h3>
+
+<p>
+
+Los Angeles
+
+4:00 PM
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ITINERARY -->
+
+<section id="itinerary" class="section-light">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Cruise Itinerary
+
+</h2>
+
+<div class="timeline">
+
+<div class="timeline-item">
+
+<h3>Monday</h3>
+
+<h4>🚢 Los Angeles</h4>
+
+<p>Departure 4:00 PM</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Tuesday</h3>
+
+<h4>🌊 Day at Sea</h4>
+
+<p>Relax and explore the ship.</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Wednesday</h3>
+
+<h4>🏝 Catalina Island</h4>
+
+<p>7:00 AM – 6:00 PM</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Thursday</h3>
+
+<h4>🇲🇽 Ensenada</h4>
+
+<p>8:00 AM – 5:00 PM</p>
+
+</div>
+
+<div class="timeline-item">
+
+<h3>Friday</h3>
+
+<h4>🏠 Los Angeles</h4>
+
+<p>Return 7:00 AM</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- INCLUDED -->
+
+<section id="included" class="container py-5">
+
+<h2 class="section-title">
+
+What's Included
+
+</h2>
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<h3>🍽 Dining</h3>
+
+<ul>
+
+<li>Main Dining Room</li>
+
+<li>Windjammer Buffet</li>
+
+<li>Café Promenade</li>
+
+<li>Pizza</li>
+
+<li>Snack Cafés</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<h3>🎭 Entertainment</h3>
+
+<ul>
+
+<li>Broadway Shows</li>
+
+<li>Ice Skating</li>
+
+<li>Movies</li>
+
+<li>Trivia</li>
+
+<li>Karaoke</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="feature-card">
+
+<h3>🏊 Activities</h3>
+
+<ul>
+
+<li>Pools</li>
+
+<li>Fitness Center</li>
+
+<li>Rock Wall</li>
+
+<li>Sports Court</li>
+
+<li>Youth Programs</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- DRINK PACKAGE -->
+
+<section id="drinkpackage" class="section-light">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Royal Caribbean Deluxe Beverage Package
+
+</h2>
+
+<p>
+
+Unlimited cocktails, beer, wine, soda,
+premium coffee, bottled water, smoothies,
+milkshakes, mocktails and more.
+
+</p>
+
+<h4>
+
+Typical Cost
+
+</h4>
+
+<p>
+
+$70-$110 per person per day.
+
+</p>
+
+<p>
+
+Adults sharing a cabin are generally required
+to purchase the package together.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- TRAVEL ADVISOR -->
+
+<section
+id="traveladvisor"
+class="advisor">
+
+<div class="container">
+
+<h2>
+
+Book Your Cruise
+
+</h2>
+
+<h3>
+
+Callie Larson
+
+</h3>
+
+<p>
+
+Certified Travel Advisor
+
+<br>
+
+Fora Travel
+
+</p>
+
+<p>
+
+📞
+
+541-515-8454
+
+</p>
+
+<p>
+
+✉
+
+callie.larson@fora.travel
+
+</p>
+
+<a
+class="btn btn-warning btn-lg"
+
+href="#">
+
+Book With Me
+
+</a>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+
+Hosted by Callie Larson • Fora Travel
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
